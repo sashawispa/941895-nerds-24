@@ -21,9 +21,55 @@
     </header>
     <main class="container">
       <h1 class="page-title">Магазин готовых шаблонов</h1>
-      <section class="filters">
+      <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма -->
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>СЕТКА:</legend>
+          <ul>
+            <li class="filter-option">
+              <input id="filter-adaptive" class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptive" checked>
+              <label for="filter-adaptive">Адаптивная</label>
+            </li>
+            <li class="filter-option">
+              <input id="filter-fixed" class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="fixed">
+              <label for="filter-fixed">Фиксированная</label>
+            </li>
+            <li class="filter-option">
+              <input id="filter-rubber"class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="rubber">
+              <label for="filter-rubber">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>ОСОБЕННОСТИ:</legend>
+          <ul>
+            <li class="filter-option">
+              <input id="filter-slider" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" checked>
+              <label for="filter-slider">Слайдер</label>
+            </li>
+            <li class="filter-option">
+              <input id="filter-advantages" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages">
+              <label for="filter-advantages">Блок преимуществ</label>
+            </li>
+            <li class="filter-option">
+              <input id="filter-news" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" checked>
+              <label for="filter-news">Новости</label>
+            </li>
+            <li class="filter-option">
+              <input id="filter-gallery" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery">
+              <label for="filter-gallery">Галерея</label>
+            </li>
+            <li class="filter-option">
+              <input id="filter-basket" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket">
+              <label for="filter-basket">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="filter-button button">
+            ПОКАЗАТЬ
+        </button>
+      </form>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список готовых шаблонов</h2>
@@ -72,15 +118,34 @@
           </li>
         </ul>
       </section>
+      <section class="contacts">
+        <h2>Напишите нам</h2>
+        <form class="contacts-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="contacts-item">
+            <label for="contacts-name">Ваше Имя:</label>
+            <input id="contacts-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+          </p>
+          <p class="contacts-item">
+            <label for="contacts-email">Ваш e-mail:</label>
+            <input id="contacts-email"type="text" name="email" value="" placeholder="email@example.com">
+          </p>
+          <p class="contacts-item">
+            <label for="contacts-textletter">Текст письма:</label>
+            <input id="contacts-textletter" type="text" name="textletter" value="" placeholder="В свободной форме">
+          </p>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+      </section>
     </main>
     <footer class="main-footer">
       <div class="footer-social">
         <b>Давайте дружить,это выгодно!</b>
         <p> Скидка 10% для друзей из социальных сетей</p><br>
         <ul>
-          <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
-          <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-          <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Студия Нердс во Вконтакте</span></a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Студия Нердс в Фейсбуке</span></a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Студия Нердс в Инстаграм</span></a></li>
         </ul>
       </div>
     </footer>
