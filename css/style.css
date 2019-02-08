@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  background-color: #eeeeee;
+}
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: #dfdfdf;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.index-columns {
+  color: #000000;
+  text-align: left;
+  background-color: #ffffff;
+  background-repeat;
+}
+
+.index-columns h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #fb565a;
+  border: none;
+}
+.button--red {
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #fb565a;
+  border: none;
+}
+.button--red:hover,
+.button--red:focus {
+  background-color: #e74246;
+}
+}
+.button--red:active {
+  background-color: #d7373b;
+}
+
+.button--green {
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #00ca74;
+  border: none;
+}
+.button--green:hover,
+.button--green:focus {
+  background-color: #00bc6c;
+}
+}
+.button--green:active {
+  background-color: #00aa62;
+}
+.button--yellow {
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #efc84a;
+  border: none;
+}
+.button--yellow:hover,
+.button--yellow:focus {
+  background-color: #eab534;
+}
+}
+.button--yellow:active {
+  background-color: #e5a722;
+}
+.filter-button-button {
+  text-align: center;
+  color: #000000;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #eeeeee;
+  border: none;
+}
+.filter-button-button:hover,
+.filter-button-button:focus {
+  background-color: #dfdfdf;
+}
+.filter-button-button:active {
+  background-color: #d5d5d5;
+}
+.contacts {
+  display: none;
+}
+.catalog-item {
+  list-style: none;
+}
+.social-list {
+  list-style: none;
+}
+.main-footer {
+  color: #000000;
+  background-color: #ffffff;
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+.footer-social ul {
+  list-style: none;
+}
+.social-button {
+  color: #e1e1e1;
+}
