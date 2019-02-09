@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Дизайн студия Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -18,14 +18,15 @@
           <li><a href="customers.html">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
-          <li><a href="basket.html">Корзина</a></li>
         </ul>
+        <p class="basket">
+        <a href="#">Корзина</a>
+      </p>
       </nav>
     </header>
     <main class="container">
       <h1 class="visually-hidden">Дизайн студия Нёрдс</h1>
 
-      <div class="index-columns">
       <section class="features">
         <h2 class="visually-hidden">Наши продукты</h2>
         <ul class="features-list">
@@ -36,7 +37,7 @@
             <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как вы увидете наш сайт!</p>
           </li>
-          <a class="button--red" href="to order.html">ЗАКАЗАТЬ</a>
+          <a class="button button-1" href="to order.html">ЗАКАЗАТЬ</a>
           <li class="features-item">
             <a class="features-header-logo-app">
               <img src="img/logo-app.png" width="300" height="146" alt="Логотип Приложения">
@@ -44,7 +45,7 @@
             <h3>Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
           </li>
-          <a class="button--green" href="to order.html">ЗАКАЗАТЬ</a>
+          <a class="button button-2" href="to order.html">ЗАКАЗАТЬ</a>
           <li class="features-item">
             <a class="features-header-logo-presentation">
               <img src="img/logo-presentation.png" width="300" height="146" alt="Логотип Презентация">
@@ -52,10 +53,9 @@
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете,насколько вы изумительны!</p>
           </li>
-          <a class="button--yellow" href="to order.html">ЗАКАЗАТЬ</a>
+          <a class="button button-3" href="to order.html">ЗАКАЗАТЬ</a>
         </ul>
       </section>
-    </div>
       <section class="contacts">
         <h2>Напишите нам</h2>
         <form class="contacts-form" action="https://echo.htmlacademy.ru" method="post">
@@ -78,8 +78,8 @@
     </main>
     <footer class="main-footer">
       <div class="footer-social">
-        <b>Давайте дружить,это выгодно!</b>
-        <p> Скидка 10% для друзей из социальных сетей</p><br>
+        <p class="footer-friendship"><strong class="footer-bold">Давайте дружить, это выгодно!</strong></p>
+        <p class="footer-sale">Скидка 10% для друзей из социальных сетей.</p>
         <ul>
           <li><a class="social-button" href="#"><span class="visually-hidden">Студия Нердс во Вконтакте</span></a></li>
           <li><a class="social-button" href="#"><span class="visually-hidden">Студия Нердс в Фейсбуке</span></a></li>

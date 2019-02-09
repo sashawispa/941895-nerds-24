@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -18,12 +18,14 @@
           <li><a href="customers.html">Клиенты</a></li>
           <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
-          <li><a href="basket.html">Корзина</a></li>
         </ul>
+        <p class="basket">
+        <a href="#">Корзина</a>
+      </p>
       </nav>
+      <h1 class="page-title">Магазин готовых шаблонов</h1>
     </header>
     <main class="container">
-      <h1 class="page-title">Магазин готовых шаблонов</h1>
       <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
@@ -69,7 +71,7 @@
             </li>
           </ul>
         </fieldset>
-        <button type="submit" class="filter-button-button">
+        <button type="submit" class="button filter-button">
             ПОКАЗАТЬ
         </button>
       </form>
@@ -78,46 +80,64 @@
         <h2 class="visually-hidden">Список готовых шаблонов</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <h3>
               <a href="catalog-item.html">
-                <img src="img/sedona.png" width="360" height="576" alt="сайт SENODA">SENODA
+                <img src="img/sedona.png" width="360" height="576" alt="сайт SENODA">
               </a>
-            </h3>
+                <div class="catalog-list-window">
+                  <h4>Sedona</h4>
+                    <p>Информационный сайт для туристов</p>
+                      <a class="button catalog-list-button" href="#">9 900 РУБ.</a>
+                </div>
           </li>
           <li class="catalog-item">
-            <h3>
               <a href="catalog-item.html">
-                <img src="img/pink.png" width="360" height="576" alt="сайт PINK">PINK
+                <img src="img/pink.png" width="360" height="576" alt="сайт PINK">
               </a>
-            </h3>
+                <div class="catalog-list-window">
+                  <h4>Pink APP</h4>
+                    <p>Продуктовый лендинг приложения для iOS и Android</p>
+                      <a class="button catalog-list-button" href="#">9 900 РУБ.</a>
+                </div>
           </li>
           <li class="catalog-item">
-            <h3>
               <a href="catalog-item.html">
-                <img src="img/borodinski.png" width="360" height="576" alt="сайт BORODINSKI">BORODINSKI
+                <img src="img/borodinski.png" width="360" height="576" alt="сайт BORODINSKI">
               </a>
-            </h3>
+              <div class="catalog-list-window">
+                <h4>Barbershop</h4>
+                  <p>Сайт салона красоты. Для мужчин, да.</p>
+                    <a class="button catalog-list-button" href="#">9 900 РУБ.</a>
+              </div>
           </li>
           <li class="catalog-item">
-            <h3>
               <a href="catalog-item.html">
-                <img src="img/mishka.png" width="360" height="576" alt="сайт MISHKA">MISHKA
+                <img src="img/mishka.png" width="360" height="576" alt="сайт MISHKA">
               </a>
-            </h3>
+                <div class="catalog-list-window">
+                  <h4>Mishka</h4>
+                    <p>Интернет-магазин вязаных игрушек</p>
+                      <a class="button catalog-list-button" href="#">9 900 РУБ.</a>
+                </div>
           </li>
           <li class="catalog-item">
-            <h3>
               <a href="catalog-item.html">
-                <img src="img/aplus.png" width="360" height="576" alt="сайт A+">A+
+                <img src="img/aplus.png" width="360" height="576" alt="сайт A+">
               </a>
-            </h3>
+              <div class="catalog-list-window">
+                <h4>A+</h4>
+                  <p>Лендинг курсов повышения квалификации</p>
+                    <a class="button catalog-list-button" href="#">9 900 РУБ.</a>
+              </div>
           </li>
           <li class="catalog-item">
-            <h3>
               <a href="catalog-item.html">
-                <img src="img/kvast.png" width="360" height="576" alt="сайт КВАСТ">KBACT
+                <img src="img/kvast.png" width="360" height="576" alt="сайт КВАСТ">
               </a>
-            </h3>
+                <div class="catalog-list-window">
+                  <h4>КВАСТ</h4>
+                    <p>Промо-сайт производителя крафтового кваса</p>
+                      <a class="button catalog-list-button" href="#">9 900 РУБ.</a>
+                </div>
           </li>
         </ul>
       </section>
@@ -143,8 +163,8 @@
     </main>
     <footer class="main-footer">
       <div class="footer-social">
-        <b>Давайте дружить,это выгодно!</b>
-        <p> Скидка 10% для друзей из социальных сетей</p><br>
+        <p class="footer-friendship"><strong class="footer-bold">Давайте дружить, это выгодно!</strong></p>
+        <p class="footer-sale">Скидка 10% для друзей из социальных сетей.</p>
         <ul>
           <li><a class="social-button" href="#"><span class="visually-hidden">Студия Нердс во Вконтакте</span></a></li>
           <li><a class="social-button" href="#"><span class="visually-hidden">Студия Нердс в Фейсбуке</span></a></li>
