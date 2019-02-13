@@ -9,20 +9,24 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нердс">
+      <div class="container nav-row">
+        <a>
+          <img class="main-header-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нердс">
         </a>
-        <ul class="site-navigation">
-          <li><a href="studio.html">Студия</a></li>
-          <li><a href="customers.html">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+      <nav class="main-navigation">
+        <div class="nav-row">
+          <ul class="site-navigation">
+            <li><a href="studio.html">Студия</a></li>
+            <li><a href="customers.html">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
         </ul>
-        <p class="basket">
-        <a href="#">Корзина</a>
+          <p class="basket">
+            <a href="#">Корзина</a>
       </p>
+    </div>
       </nav>
+    </div>
     </header>
     <main class="container">
       <h1 class="visually-hidden">Дизайн студия Нёрдс</h1>
@@ -36,24 +40,24 @@
             </a>
             <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как вы увидете наш сайт!</p>
+            <a class="button button-1" href="to order.html">ЗАКАЗАТЬ</a>
           </li>
-          <a class="button button-1" href="to order.html">ЗАКАЗАТЬ</a>
           <li class="features-item">
             <a class="features-header-logo-app">
               <img src="img/logo-app.png" width="300" height="146" alt="Логотип Приложения">
             </a>
             <h3>Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a class="button button-2" href="to order.html">ЗАКАЗАТЬ</a>
           </li>
-          <a class="button button-2" href="to order.html">ЗАКАЗАТЬ</a>
           <li class="features-item">
             <a class="features-header-logo-presentation">
               <img src="img/logo-presentation.png" width="300" height="146" alt="Логотип Презентация">
             </a>
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете,насколько вы изумительны!</p>
+            <a class="button button-3" href="to order.html">ЗАКАЗАТЬ</a>
           </li>
-          <a class="button button-3" href="to order.html">ЗАКАЗАТЬ</a>
         </ul>
       </section>
       <section class="contacts">
@@ -76,15 +80,16 @@
         <button class="modal-close" type="button">Закрыть</button>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
+      <ul class="social-list">
+        <li><a class="social-button" href="#"><span class="visually-hidden">Студия Нердс во Вконтакте</span></a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Студия Нердс в Фейсбуке</span></a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Студия Нердс в Инстаграм</span></a></li>
+      </ul>
       <div class="footer-social">
         <p class="footer-friendship"><strong class="footer-bold">Давайте дружить, это выгодно!</strong></p>
         <p class="footer-sale">Скидка 10% для друзей из социальных сетей.</p>
-        <ul>
-          <li><a class="social-button" href="#"><span class="visually-hidden">Студия Нердс во Вконтакте</span></a></li>
-          <li><a class="social-button" href="#"><span class="visually-hidden">Студия Нердс в Фейсбуке</span></a></li>
-          <li><a class="social-button" href="#"><span class="visually-hidden">Студия Нердс в Инстаграм</span></a></li>
-        </ul>
+        
       </div>
     </footer>
   </body>

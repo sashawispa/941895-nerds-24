@@ -124,11 +124,16 @@ a {
 }
 
 .page-title {
-  font-weight: 500;
-  font-size: 55px;
-  line-height: 55px;
-  text-align: center;
-  color: black;
+  margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 80px;
+    padding-bottom: 115px;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 1;
+    text-align: center;
+    color: black;
+    background-color: #eeeeee;
 }
 .filter fieldset {
   border: none;
@@ -184,4 +189,102 @@ a {
   font-size: 18px;
   line-height: 30px;
   color: black;
+}
+
+
+/* НАЧАЛО ПОСТРОЕНИЯ СЕТОК */
+
+html,
+body {
+  min-width: 1440px;
+}
+.main-header{
+  padding-top: 50px;
+  background-color: #eeeeee;
+}
+.container {
+  display: block;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.nav-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 440px;
+}
+
+.main-navigation {
+  flex-grow: 1;
+  font-weight: 500;
+  line-height: 1.9;
+  text-transform: uppercase;
+}
+
+.main-header-logo {
+  margin-right: 200px;
+}
+
+.basket{
+  margin: 0;
+  padding: 0;
+}
+.features {
+  margin-bottom: 160px;
+}
+.features-item {
+  width: 300px;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.features-list:last-of-type {
+  margin-right: 60px;
+}
+
+.main-footer {
+  display: flex;
+}
+.footer-social {
+  margin-left: 50px
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.filter {
+  width: 260px;
+  height: 705px;
+  margin-right: 140px;
+}
+.catalog {
+  width: 760px;
+  }
+.catalog-item {
+  width: 360px;
+  margin-right: 40px;
+  margin-bottom: 33px;
+
+}
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 60px;
+  padding: 0;
 }

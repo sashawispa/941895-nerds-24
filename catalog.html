@@ -9,10 +9,12 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нердс">
+      <div class="container nav-row">
+        <a>
+          <img class="main-header-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нердс">
         </a>
+      <nav class="main-navigation">
+        <div class="nav-row">
         <ul class="site-navigation">
           <li><a href="stydio.html">Студия</a></li>
           <li><a href="customers.html">Клиенты</a></li>
@@ -22,10 +24,14 @@
         <p class="basket">
         <a href="#">Корзина</a>
       </p>
+      </div>
       </nav>
-      <h1 class="page-title">Магазин готовых шаблонов</h1>
+      </div>
     </header>
-    <main class="container">
+    <main class="main-catalog">
+      <h1 class="page-title">Магазин готовых шаблонов</h1>
+      <div class="container">
+        <div class="container-flex">
       <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
@@ -77,7 +83,7 @@
       </form>
       </section>
       <section class="catalog">
-        <h2 class="visually-hidden">Список готовых шаблонов</h2>
+          <h2 class="visually-hidden">Список готовых шаблонов</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
               <a href="catalog-item.html">
@@ -140,6 +146,8 @@
                 </div>
           </li>
         </ul>
+        </div>
+      </div>
       </section>
       <section class="contacts">
         <h2>Напишите нам</h2>
@@ -162,14 +170,14 @@
       </section>
     </main>
     <footer class="main-footer">
+      <ul class="social-list">
+        <li><a class="social-button" href="#"><span class="visually-hidden">Студия Нердс во Вконтакте</span></a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Студия Нердс в Фейсбуке</span></a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Студия Нердс в Инстаграм</span></a></li>
+      </ul>
       <div class="footer-social">
         <p class="footer-friendship"><strong class="footer-bold">Давайте дружить, это выгодно!</strong></p>
         <p class="footer-sale">Скидка 10% для друзей из социальных сетей.</p>
-        <ul>
-          <li><a class="social-button" href="#"><span class="visually-hidden">Студия Нердс во Вконтакте</span></a></li>
-          <li><a class="social-button" href="#"><span class="visually-hidden">Студия Нердс в Фейсбуке</span></a></li>
-          <li><a class="social-button" href="#"><span class="visually-hidden">Студия Нердс в Инстаграм</span></a></li>
-        </ul>
       </div>
     </footer>
 
