@@ -456,19 +456,20 @@ input[type="radio"].visually-hidden {
   opacity: 0.1;
 }
 .location{
+  position: relative;
   margin-top: 80px;
   margin-bottom: 78px;
 }
 .map-marker{
   position: absolute;
   width: 231px;
-  bottom: -1475px;
+  bottom: 135px;
   left: 820px;
 }
 .address {
   position: absolute;
   left: 140px;
-  bottom: -1560px;
+  bottom: 54px;
   width: 319px;
   padding-top: 54px;
   padding-bottom: 47px;
@@ -725,7 +726,7 @@ input[type="radio"].visually-hidden {
   opacity: 0.4;
 
 }
-.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox:checked + label::before {
   content: "";
 
   position: absolute;
@@ -736,6 +737,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+
 }
 .filter-input-radio + label::before {
   content: "";
@@ -750,7 +752,7 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
   opacity: 0.4;
 }
-.filter-input-radio:checked + label::after {
+.filter-input-radio:checked + label::before {
   content: "";
 
   position: absolute;
@@ -761,7 +763,10 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-
+}
+.filter-input-radio + label:hover::before,
+.filter-input-checkbox + label:hover::before {
+  opacity: 1;
 }
 
 .filter-button {
@@ -793,6 +798,8 @@ input[type="radio"].visually-hidden {
   width: 760px;
   }
 .catalog-item {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 33px;
   list-style: none;
 }
@@ -804,6 +811,16 @@ input[type="radio"].visually-hidden {
   margin-bottom: 60px;
   padding: 0;
 }
+.catalog-list li {
+  position: relative;
+  width: 360px;
+}
+.add-info{
+  position: absolute;
+  top: 345px;
+  display: none;
+}
+
 .catalog-list-window {
   display: flex;
   flex-direction: column;
@@ -811,7 +828,6 @@ input[type="radio"].visually-hidden {
   width: 360px;
   background-color: #eeeeee;
 }
-
 .catalog-list-window p {
   display: block;
 
