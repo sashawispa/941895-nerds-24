@@ -10,7 +10,7 @@
   <body>
     <header class="main-header">
       <div class="container nav-row">
-        <a>
+        <a  href="index.html">
           <img class="main-header-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нердс">
         </a>
       <nav class="main-navigation">
@@ -18,24 +18,45 @@
         <ul class="site-navigation">
           <li><a href="stydio.html">Студия</a></li>
           <li><a href="customers.html">Клиенты</a></li>
-          <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+          <li><a class="current-page">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
-        <p class="basket">
+        <ul class="basket">
         <a href="#">Корзина</a>
-      </p>
+      </ul>
       </div>
       </nav>
       </div>
     </header>
+
     <main class="main-catalog">
       <h1 class="page-title">Магазин готовых шаблонов</h1>
-      <div class="container">
+      <div class="container main-net">
         <div class="container-flex">
       <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
+
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset>
+          <fieldset class="cost">
+            <legend>СТОИМОСТЬ:</legend>
+            <div class="cost-range">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="width: 70%"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+              </div>
+            <div class="price-controls">
+                <label for="min-price">ОТ <input id="min-price" type="number" min="0" max="25000" value="0"></label>
+
+                <label for="max-price">ДО <input id="max-price" type="number" min="0" max="25000" value="15000"></label>
+              </div>
+          </fieldset>
+
+
+        <fieldset class="filter-net">
           <legend>СЕТКА:</legend>
           <ul>
             <li class="filter-option">
@@ -52,7 +73,8 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+
+        <fieldset class="filter-advantages">
           <legend>ОСОБЕННОСТИ:</legend>
           <ul>
             <li class="filter-option">
@@ -83,32 +105,47 @@
       </form>
       </section>
 
+      <div class="sorting-catalog">
+          <div class="sorting">
+            <p>СОРТИРОВАТЬ:</p>
+
+            <ul class="sorting-option">
+              <li><a class="open-option">ПО ЦЕНЕ</a></li>
+              <li><a href="#">ПО ТИПУ</a></li>
+              <li><a href="#">ПО НАЗВАНИЮ</a></li>
+            </ul>
+
+            <ul class="sorting-pointer">
+              <li><a class="icon-direction open-option"><span class="visually-hidden">по убыванию</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>
+              </a></li>
+              <li><a class="icon-direction" href="#"><span class="visually-hidden">по возрастанию</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg>
+              </a></li>
+            </ul>
+          </div>
+
       <section class="catalog">
           <h2 class="visually-hidden">Список готовых шаблонов</h2>
         <ul class="catalog-list">
+
           <li class="catalog-item">
             <svg class="catalog-item-browser" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
               <path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
-              <a href="catalog-item.html">
                 <img src="img/sedona.png" width="360" height="576" alt="сайт SENODA">
-              </a>
               <div class="add-info">
-                <div class="catalog-list-window">
-                  <h4>SEDONA</h4>
+                  <h4><a class="catalog-title" href="#">SEDONA</a></h4>
                     <p>Информационный сайт <br>для туристов</p>
                       <a class="button catalog-list-button" href="#">9 900 РУБ.</a>
-                </div>
               </div>
           </li>
 
           <li class="catalog-item">
             <svg class="catalog-item-browser" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
               <path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
-              <a href="catalog-item.html">
                 <img src="img/pink.png" width="360" height="576" alt="сайт PINK">
-              </a>
-                <div class="catalog-list-window">
-                  <h4>PINK APP</h4>
+                <div class="add-info">
+                  <h4><a class="catalog-title" href="#">PINK APP</a></h4>
                     <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
                       <a class="button catalog-list-button" href="#">9 900 РУБ.</a>
                 </div>
@@ -117,11 +154,9 @@
           <li class="catalog-item">
             <svg class="catalog-item-browser" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
               <path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
-              <a href="catalog-item.html">
                 <img src="img/borodinski.png" width="360" height="576" alt="сайт BORODINSKI">
-              </a>
-              <div class="catalog-list-window">
-                <h4>BARBERSHOP</h4>
+              <div class="add-info">
+                <h4><a class="catalog-title" href="#">BARBERSHOP</a></h4>
                   <p>Сайт салона красоты.<br> Для мужчин, да.</p>
                     <a class="button catalog-list-button" href="#">9 900 РУБ.</a>
               </div>
@@ -130,11 +165,9 @@
           <li class="catalog-item">
             <svg class="catalog-item-browser" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
               <path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
-              <a href="catalog-item.html">
                 <img src="img/mishka.png" width="360" height="576" alt="сайт MISHKA">
-              </a>
-                <div class="catalog-list-window">
-                  <h4>MISHKA</h4>
+                <div class="add-info">
+                  <h4><a class="catalog-title" href="#">MISHKA</a></h4>
                     <p>Интернет-магазин<br> вязаных игрушек</p>
                       <a class="button catalog-list-button" href="#">9 900 РУБ.</a>
                 </div>
@@ -143,11 +176,9 @@
           <li class="catalog-item">
             <svg class="catalog-item-browser" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
               <path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
-              <a href="catalog-item.html">
                 <img src="img/aplus.png" width="360" height="576" alt="сайт A+">
-              </a>
-              <div class="catalog-list-window">
-                <h4>A PLUS</h4>
+              <div class="add-info">
+                <h4><a class="catalog-title" href="#">A PLUS</a></h4>
                   <p>Лендинг курсов повышения<br> квалификации</p>
                     <a class="button catalog-list-button" href="#">9 900 РУБ.</a>
               </div>
@@ -156,24 +187,33 @@
           <li class="catalog-item">
             <svg class="catalog-item-browser" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
               <path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
-              <a href="catalog-item.html">
                 <img src="img/kvast.png" width="360" height="576" alt="сайт КВАСТ">
-              </a>
-                <div class="catalog-list-window">
-                  <h4>КВАСТ</h4>
+                <div class="add-info">
+                  <h4><a class="catalog-title" href="#">КВАСТ</a></h4>
                     <p>Промо-сайт производителя<br> крафтового кваса</p>
                       <a class="button catalog-list-button" href="#">9 900 РУБ.</a>
                 </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
         </div>
       </div>
-      </section>
+    </section>
+  </div>
+        <div class="pagination container">
+            <ul class="pagination-list">
+              <li><a class="open-pagination" aria-label="открыта страница">1</a></li>
+              <li><a href="#" aria-label="переход на страницу">2</a></li>
+              <li><a href="#" aria-label="переход на страницу">3</a></li>
+              <li><a class="next" href="#" aria-label="переход на страницу">СЛЕДУЮЩАЯ</a></li>
+            </ul>
+        </div>
 
       <section class="contacts">
       <div class="contacts-title">
         <h2>Напишите нам</h2>
+        <a title="Закрыть">
         <svg class="modal-cross" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
+          </a>
       </div>
         <form class="contacts-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="contacts-user">
@@ -188,11 +228,20 @@
         </div>
           <p class="contacts-item">
             <label for="contacts-textletter">Текст письма:</label>
-            <textarea class="contacts-user-text" id="contacts-textletter" name="textletter" cols="100%" rows="5" placeholder="В свободной форме"></textarea>
+            <textarea class="contacts-user-text" id="contacts-textletter" name="textletter" cols="100" rows="5" placeholder="В свободной форме"></textarea>
           </p>
           <button class="button" type="submit">ОТПРАВИТЬ</button>
         </form>
+      </section>
 
+      <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533207!2d30.320858716285002!3d59.938716481876256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1550573865197" width="1200" height="416"  style="border:0" allowfullscreen></iframe>
+        <div class="address">
+          <h3> NЁRDS DESIGN STUDIO</h3>
+          <p class="address-info">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+          <p class="tel"> +7 (812) 275-75-75</p>
+          <a class="button" href="#">НАПИШИТЕ НАМ</a>
+        </div>
       </section>
     </main>
 
@@ -201,7 +250,6 @@
         <li><a class="social-button" href="#"><span class="visually-hidden">Студия Нердс во Вконтакте</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15">
             <path fill=#ffffff d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z"/>
-          </path>
           </svg></a></li>
         <li><a class="social-button" href="#"><span class="visually-hidden">Студия Нердс в Фейсбуке</span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
     <path fill=#ffffff d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
