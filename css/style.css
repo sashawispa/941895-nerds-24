@@ -112,23 +112,9 @@ input[type="radio"].visually-hidden {
 .basket{
   margin: 0;
   padding: 0;
-  padding-left: 41px;
-  position: relative;
-
 }
-.basket::before {
-  content:"";
-  position:absolute;
-  top: 7px;
-  left: 1px;
-
-  width: 15px;
-  height: 15px;
-
-  background-image: url("../img/basket-icon.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  color: #a6a6a6;
+.basket a{
+  padding-left: 26px;
 }
 
 .slider {
@@ -467,6 +453,7 @@ input[type="radio"].visually-hidden {
 }
 
 .clients li {
+
   list-style-type: none;
 }
 
@@ -516,6 +503,8 @@ input[type="radio"].visually-hidden {
   text-transform: none;
   color: #666666;
   text-align: center;
+  padding-right: 55px;
+  padding-left: 50px;
 }
 .tel {
   margin: 0;
@@ -567,7 +556,7 @@ input[type="radio"].visually-hidden {
 }
 .contacts-item{
   margin: 0;
-
+  padding-right: 40px;
 }
 
 .contacts-item label{
@@ -627,7 +616,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 261px;
   list-style: none;
 }
 .main-footer {
@@ -666,6 +654,7 @@ input[type="radio"].visually-hidden {
 
   list-style: none;
 }
+
 .social-button {
   display: flex;
   justify-content: center;
@@ -674,6 +663,7 @@ input[type="radio"].visually-hidden {
   height: 79px;
   border-radius: 50px 50px 50px 50px;
   background-color: #e1e1e1;
+  margin-right: 12px;
 }
 .social-button:hover,
 .social-button:focus {
@@ -1059,12 +1049,14 @@ input[type="radio"].visually-hidden {
   margin-top: 35px;
 }
 .add-info p{
+  width: 190px;
+  padding-left: 90px;
   text-align: center;
   line-height: 18px;
   text-transform: none;
   color: #666666;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 15px;
   margin-bottom: 30px;
 }
 .catalog-title {
