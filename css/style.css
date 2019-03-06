@@ -574,13 +574,15 @@ input[type="radio"].visually-hidden {
 }
 .contacts {
   position: fixed;
-  left: 25%;
+  left: 50%;
   top: 25%;
   z-index: auto;
   display: none;
   width: 960px;
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+  background-color: #ffffff;
   padding-top: 73px;
+  margin-left: -480px;
 }
 .contacts-show {
   display: block;
@@ -650,10 +652,12 @@ input[type="radio"].visually-hidden {
 
 .contacts-item input:focus,
 .contacts-user-text:focus {
+  color: #000000;
   border: 2px solid #000000;
 }
 .contacts-item input:invalid,
 .contacts-user-text:invalid {
+  color: #e74246;
   border: 2px solid #e74246;
 }
 .contacts .button{
