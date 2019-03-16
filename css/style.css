@@ -198,13 +198,13 @@ input[type="radio"].visually-hidden {
 .slider-item {
     display: none;
     padding: 78px 0 80px 0;
-    margin-top: -5px;
+    margin-top: -8px;
 }
 
 .slider-item:nth-child(1) {
     background-image: url("../img/slide-1.png");
     background-repeat: no-repeat;
-    background-position: 93% 16px;
+    background-position: 93% 19px;
 }
 
 .slider-item:nth-child(2) {
@@ -365,11 +365,11 @@ input[type="radio"].visually-hidden {
 }
 .description-text {
   width: 660px;
-  margin-top: 75px;
+  margin-top: 74px;
 }
 .about-us-description {
     margin: 0;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
     font-weight: 500;
     font-size: 45px;
     line-height: 45px;
@@ -380,7 +380,7 @@ input[type="radio"].visually-hidden {
 
 .about-us-principles {
     margin: 0;
-    margin-bottom: 37px;
+    margin-bottom: 36px;
     line-height: 26px;
     text-transform: none;
     color: #283136;
@@ -397,7 +397,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 80px;
+  margin-top: 79px;
   border-top: 2px solid #eeeeee;
 
 
@@ -455,8 +455,8 @@ input[type="radio"].visually-hidden {
 
 .description-logo-table img {
     margin: 0;
-    margin-bottom: 6px;
-    margin-top: 1px;
+    margin-bottom: 3px;
+    margin-top: 3px;
 }
 
 
@@ -465,8 +465,8 @@ input[type="radio"].visually-hidden {
 }
 .description-table td {
     padding-bottom: 27px;
-    padding-right: 18px;
-    padding-top: 9px;
+    padding-right: 10px;
+    padding-top: 6px;
 }
 
 .description-table td:last-child {
@@ -475,8 +475,8 @@ input[type="radio"].visually-hidden {
 
 .table-title {
     margin: 0;
-    margin-top: 25px;
-    margin-bottom: 49px;
+    margin-top: 26px;
+    margin-bottom: 51px;
     padding-left: 2px;
     text-align: center;
     line-height: 24px;
@@ -504,8 +504,8 @@ input[type="radio"].visually-hidden {
 
 
 .clients {
-  padding: 41px 0;
-  margin-bottom: 80px;
+  padding: 42px 0 37px 0;
+  margin-bottom: 79px;
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
 }
@@ -519,7 +519,9 @@ input[type="radio"].visually-hidden {
 
   list-style: none;
 }
-
+.clients-logo:first-child{
+  margin-top: 4px;
+}
 .clients-logo {
   width: 260px;
   margin-right: 40px;
@@ -579,7 +581,7 @@ input[type="radio"].visually-hidden {
     bottom: 54px;
     width: 319px;
     padding-top: 54px;
-    padding-bottom: 52px;
+    padding-bottom: 53px;
     vertical-align: middle;
     text-align: center;
     background-color: #ffffff;
@@ -587,7 +589,7 @@ input[type="radio"].visually-hidden {
 
 .address h3 {
     margin: 0;
-    margin-bottom: 22px;
+    margin-bottom: 23px;
     margin-left: -28px;
     line-height: 30px;
     font-size: 18px;
@@ -599,7 +601,7 @@ input[type="radio"].visually-hidden {
 
 .address-info {
     margin: 0;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
     font-size: 16px;
     line-height: 18px;
     text-transform: none;
@@ -622,7 +624,7 @@ input[type="radio"].visually-hidden {
 
 .contacts-us {
     width: 142px;
-    margin-top: 36px;
+    margin-top: 35px;
 }
 
 @-webkit-keyframes bounce {
@@ -946,7 +948,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-net {
-    margin-top: 52px;
+    margin-top: 51px;
 }
 
 .filter {
@@ -1060,7 +1062,7 @@ input[type="radio"].visually-hidden {
 
 .price-controls input {
     width: 60px;
-    padding: 10px 4px 10px 14px;
+    padding: 10px 4px 10px 13px;
     margin-left: 10px;
     text-align: center;
     color: #283136;
@@ -1371,7 +1373,7 @@ input[type="radio"].visually-hidden {
 
 .add-info h4 {
     margin: 0;
-    margin-top: 25px;
+    margin-top: 26px;
     text-transform: uppercase;
 }
 
